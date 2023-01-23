@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.navigation.NavigationBarView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         val secondFragment = SecondFragment()
         val thirdFragment = ThirdFragment()
 
-        setCurrentFragment(firstFragment) //set the initial fragment that shows app at the app's opening
+        setCurrentFragment(firstFragment) //set the initial fragment that shows at the app's opening
 
         val bottomNavView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         bottomNavView.setOnNavigationItemSelectedListener {
